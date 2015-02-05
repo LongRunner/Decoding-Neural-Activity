@@ -1,0 +1,11 @@
+Neurons are arguably one of the most interesting cells in the body due to their ability to propagate signals over large distances rapidly. They perform this function by generating and sending action potentials down their axon. These action potentials are then sent to other neurons in the body’s nervous system.
+
+Interestingly, even though an action potential is thought of as an all or none event, information about something can be hidden within the signal itself. It has been known for sometime that neurons which innervate muscles will flex them based on the average number of spike per unit time, a so called ‘rate code’. Conversely, neurons that change the precise timing of their spikes are said to be based on a ‘temporal code’. These are by no means the only mechanisms by which neurons modulate there responses, but exploring and understanding these modulations, as well as answering how information is encoded at the population level for a given stimulus, underlies computational and theoretical neuroscience.
+
+Of note, Graf[1] investigated how visual stimuli could be inferred from the responses present in V1 neuronal populations. He found that a parametric decoder that assumes neuronal independence, and an empirical decoder, which uses an assumption free, pooling rule, can both learn the structure of underlying neuronal response distributions. However, the empirical decoder performed at a higher level when compared to the parametric decoder, suggesting that a data driven decoder can better extract the structure of neuronal response distributions, which are in essence carrying sensory information.
+
+Herein, we will try to reproduce these findings, as well as try to extend them by testing whether a support vector machine (SVM) decoder based on a one vs. all classification scheme can generate better results then previously seen. This scheme requires that N binary classifiers be trained to distinguish between examples from a single class vs. the examples of all remaining classes. When classification is necessary, all classifiers are run, and the classifier, which output’s the most positive value is chosen as the datum’s class.
+
+Bibliography
+[1] Graf, A. B., Kohn, A., Jazayeri, M. & Movshon, J. A. Decoding the activity of neuronal populations in macaque primary visual cortex. Nature
+Neurosci. 14, 239–245 (2011)
